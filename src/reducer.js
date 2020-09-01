@@ -36,8 +36,10 @@ function reducer(state, action) {
       }
       return cartvalue;
     });
+
     return { ...state, cart: tempCart };
   }
+  //for removing one items
   if (action.type === REMOVE) {
     // console.log(action.payload.id);
     return {
